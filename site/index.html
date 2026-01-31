@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code Mastery</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+    <!-- Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markdown.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i data-lucide="terminal"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>Claude Code</h1>
+                    <span>Mastery Curriculum</span>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <div class="nav-group">
+                    <h3>Start Here</h3>
+                    <button class="nav-item active" data-file="../README.md">
+                        <i data-lucide="book-open"></i> Introduction
+                    </button>
+                    <button class="nav-item" data-file="../progress-tracker.md">
+                        <i data-lucide="target"></i> Progress Tracker
+                    </button>
+                </div>
+
+                <div class="nav-group">
+                    <h3>Modules</h3>
+                    <button class="nav-item" data-file="../00-terminal-orientation.md">
+                        <i data-lucide="monitor"></i> 0. Orientation
+                    </button>
+                    <button class="nav-item" data-file="../01-foundations.md">
+                        <i data-lucide="play-circle"></i> 1. Foundations
+                    </button>
+                    <button class="nav-item" data-file="../02-core-skills.md">
+                        <i data-lucide="cpu"></i> 2. Core Skills
+                    </button>
+                    <button class="nav-item" data-file="../03-mastery.md">
+                        <i data-lucide="zap"></i> 3. Mastery
+                    </button>
+                </div>
+
+                <div class="nav-group">
+                    <h3>Bonus</h3>
+                    <button class="nav-item" data-file="../04-bonus-workflows.md">
+                        <i data-lucide="rocket"></i> Productivity Wins
+                    </button>
+                </div>
+            </nav>
+            
+            <div class="progress-widget">
+                <div class="progress-header">
+                    <span>Course Progress</span>
+                    <span id="progress-text">0%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content-area">
+            <header class="top-bar">
+                <button id="sidebar-toggle" class="icon-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+                <div class="breadcrumbs">
+                    <span id="current-section">Introduction</span>
+                </div>
+                <div class="actions">
+                    <button id="mark-complete-btn" class="action-btn">
+                        <i data-lucide="check-circle"></i> Mark as Complete
+                    </button>
+                </div>
+            </header>
+            
+            <div id="markdown-viewer" class="markdown-body">
+                <!-- Content injected here -->
+                <div class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading content...</p>
+                </div>
+            </div>
+
+            <footer class="content-footer">
+                <button id="prev-btn" class="nav-btn secondary" disabled>
+                    <i data-lucide="arrow-left"></i> Previous
+                </button>
+                <button id="next-btn" class="nav-btn primary">
+                    Next Lesson <i data-lucide="arrow-right"></i>
+                </button>
+            </footer>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
