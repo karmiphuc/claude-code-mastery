@@ -1,0 +1,33 @@
+Old notes from previous project
+--------------------------------
+
+Project: Website Redesign
+Date: Q4 2023
+
+Key learnings:
+- User testing is essential before launch
+- Mobile-first approach worked well
+- Content migration took longer than expected
+- SEO impact was positive but delayed
+
+Team feedback:
+- Design phase: 4/5
+- Development: 3/5 (ran over budget)
+- Launch: 5/5 (smooth)
+- Post-launch support: 4/5
+
+Recommendations for future:
+1. Allocate 30% more time for content migration
+2. Start SEO work earlier in the process
+3. Do more user testing on mobile devices
+4. Consider A/B testing for major changes
+
+Contact info for vendors:
+- Design agency: Sarah@designstudio.com
+- Dev contractor: Mike (Slack: @mike_dev)
+- SEO consultant: Jennifer (upwork profile)
+
+Random notes:
+- Check on analytics dashboard performance
+- Follow up on accessibility audit
+- Update documentation with new URL structure

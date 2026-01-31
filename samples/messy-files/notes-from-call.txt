@@ -1,0 +1,7 @@
+Meeting with client - important points discussed
+Action items: send follow-up email, update proposal
+They want the feature by end of month
+Budget is around 50k
+Next meeting tuesday
+
+Note to self: remember to ask about the API access requirements
