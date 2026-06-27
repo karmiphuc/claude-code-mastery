@@ -104,7 +104,7 @@ Jump to what you need:
 - ✅ Permission prompts and how to respond
 
 ### Module 1: Foundations
-- ✅ Starting Claude Code (setup already done via company script)
+- ✅ Starting Claude Code (installation covered in Module 1)
 - ✅ First-run configuration
 - ✅ Your first conversation
 - ✅ Non-coding wins (file organization, research)
@@ -161,7 +161,7 @@ This curriculum synthesizes the best content from:
 ### Required
 - A computer (macOS, Windows, or Linux)
 - Internet connection
-- **Claude Code installed via company setup script** (usage covered by company's Bedrock account)
+- **Claude Code installed and authenticated** (Module 1 walks through it)
 
 ### Recommended
 - A code editor (VS Code, Cursor, etc.)
@@ -171,7 +171,7 @@ This curriculum synthesizes the best content from:
 ### Not Required
 - Programming experience (helpful but not necessary)
 - Previous terminal experience (Module 0 covers this)
-- Personal Claude subscription (company provides access)
+- Personal Claude subscription, or any account with Claude Code access
 
 ---
 
